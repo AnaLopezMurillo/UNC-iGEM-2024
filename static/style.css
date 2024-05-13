@@ -48,3 +48,63 @@ footer a {
 footer a:hover { 
     color: white; text-decoration: underline;
 }
+
+/* Page styles */
+
+.header-text {
+    font-size: 70px;
+    background-color: #EBF7F7;
+    color: #FFD972;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    padding-bottom: 1rem;
+    width: 700px;
+    height: 100px;
+    text-shadow: 1px 3px 8px rgba(80, 96, 100, 0.521);
+}
+
+.subheader {
+    font-size: 40px;
+    background-color: #FFF7F7;
+    color: #EE8A8B;
+    font-weight: 900;
+    text-align: center;
+    font-style: italic;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 15px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    margin-bottom: 1rem;
+    text-shadow: 1px 3px 3px rgba(80, 96, 100, 0.209);
+}
+
+.subheader_small {
+    font-size: 25px;
+    background-color: #FFF7F7;
+    color: #EE8A8B;
+    font-weight: 600;
+    text-align: center;
+    font-style: normal;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 15px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    margin-top: 20px;
+    margin-bottom:10px;
+}
+
+.exp_div {
+    background-color: #FBC1BD;
+    color: #FFFFFF;
+    border-radius: 30px;
+    padding: 40px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    tab-size: 10;
+    float:right;
+    overflow-wrap: break-word;
+}
