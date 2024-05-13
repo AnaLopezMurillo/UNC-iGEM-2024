@@ -33,8 +33,12 @@ def home():
 @app.route('/<page>/')
 def pages(page):
     path = str(Path('pages')) + '/' + page.lower() + '.html'
+    error_path = "error.html"
 
-    return render_template(path)
+    try:
+        return render_template(path)
+    except:   # handle 404 errors with custom page
+        return render_template(error_path)
 
 
 # handle individual team pages
@@ -42,7 +46,12 @@ def pages(page):
 def team(page):
     path = str(Path('pages/team')) + '/' + page.lower() + '.html'
 
-    return render_template(path)
+    error_path = "error.html"
+
+    try:
+        return render_template(path)
+    except:  # handle 404 errors with custom page
+        return render_template(error_path)
 
 
 # Main Function, Runs at http://0.0.0.0:8080
