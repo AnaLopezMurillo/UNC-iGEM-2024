@@ -87,25 +87,28 @@
   </div>
   <script>
       document.addEventListener("DOMContentLoaded", function() {
-          const toggles = document.querySelectorAll('.dropdown-toggle');
+        const toggles = document.querySelectorAll('.dropdown-toggle');
+        const items = document.querySelectorAll('.toc-list-items');
 
-          toggles.forEach(function(toggle) {
-              toggle.addEventListener('click', function(event) {
-                  event.stopPropagation();
-                  const dropdown = new bootstrap.Dropdown(toggle);
-                  dropdown.toggle();
-              });
-          });
+        toggles.forEach(function(toggle) {
+            toggle.addEventListener('click', function(event) {
+                event.stopPropagation();
+                const dropdown = toggle.nextElementSibling;
+                const isOpen = dropdown.classList.contains('show');
+                if (isOpen) {
+                    dropdown.classList.remove('show');
+                } else {
+                    dropdown.classList.add('show');
+                }
+            });
+        });
 
-          window.addEventListener('click', function() {
-              const dropdowns = document.querySelectorAll('.dropdown-menu.show');
-              dropdowns.forEach(function(dropdown) {
-                  const dropdownElement = dropdown.parentElement.querySelector('.dropdown-toggle');
-                  const bootstrapDropdown = new bootstrap.Dropdown(dropdownElement);
-                  bootstrapDropdown.hide();
-              });
-          });
-      });
+        window.addEventListener('click', function() {
+            items.forEach(function(item) {
+                item.classList.remove('show');
+            });
+        });
+    });
   </script>
   
     <br>
