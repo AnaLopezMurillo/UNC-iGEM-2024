@@ -14,7 +14,103 @@
 
   <!-- Table of Contents -->
   <div class="col-lg-3" style="background-color: #fff;">
-    table of contents here
+    
+    <div class="toc-header">
+      <h4 class="toc-heading">Contents</h4>
+    </div>
+    <div class="toc-list-wrapper">
+        <ul class="toc-list">
+            <li class="toc-list-header dropdown">
+                <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Protein design</a>
+                <ul class="toc-list-items dropdown-menu">
+                    <li class="toc-list-item"><a class="dropdown-item">Survival simulation</a></li>
+                    <li class="toc-list-item"><a class="dropdown-item">Algorithm mods</a></li>
+                </ul>
+            </li>
+            <li class="toc-list-header dropdown">
+                <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Lorem ipsum</a>
+                <ul class="toc-list-items dropdown-menu">
+                    <li class="toc-list-item"><a class="dropdown-item">Dolor sit amet</a></li>
+                    <li class="toc-list-item"><a class="dropdown-item">Consectetur adipiscing</a></li>
+                </ul>
+            </li>
+            <li class="toc-list-header dropdown">
+                <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Sed do eiusmod</a>
+                <ul class="toc-list-items dropdown-menu">
+                    <li class="toc-list-item"><a class="dropdown-item">Tempor incididunt</a></li>
+                    <li class="toc-list-item"><a class="dropdown-item">Ut labore et dolore</a></li>
+                </ul>
+            </li>
+            <li class="toc-list-header dropdown">
+                <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Magna aliqua</a>
+                <ul class="toc-list-items dropdown-menu">
+                    <li class="toc-list-item"><a class="dropdown-item">Ut enim ad mimim veniam</a></li>
+                    <li class="toc-list-item"><a class="dropdown-item">Quis nostrud exercitation</a></li>
+                </ul>
+            </li>
+            <li class="toc-list-header dropdown">
+                <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Ullamco laboris</a>
+                <ul class="toc-list-items dropdown-menu">
+                    <li class="toc-list-item"><a class="dropdown-item">Nisi ut aliquip</a></li>
+                    <li class="toc-list-item"><a class="dropdown-item">Ex ea commodo consequat</a></li>
+                </ul>
+            </li>
+            <li class="toc-list-header dropdown">
+                <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Duis aute irure dolor</a>
+                <ul class="toc-list-items dropdown-menu">
+                    <li class="toc-list-item"><a class="dropdown-item">In reprehenderit</a></li>
+                    <li class="toc-list-item"><a class="dropdown-item">In voluptate</a></li>
+                </ul>
+            </li>
+            <li class="toc-list-header dropdown">
+                <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Velit esse cillum dolore</a>
+                <ul class="toc-list-items dropdown-menu">
+                    <li class="toc-list-item"><a class="dropdown-item">Eu fugiat nulla pariatur</a></li>
+                    <li class="toc-list-item"><a class="dropdown-item">Excepteur sint occaecat</a></li>
+                </ul>
+            </li>
+            <li class="toc-list-header dropdown">
+                <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Cupidatat non proident</a>
+                <ul class="toc-list-items dropdown-menu">
+                    <li class="toc-list-item"><a class="dropdown-item">Sunt in culpa</a></li>
+                    <li class="toc-list-item"><a class="dropdown-item">Qui officia</a></li>
+                </ul>
+            </li>
+            <li class="toc-list-header dropdown">
+                <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Deserunt mollit</a>
+                <ul class="toc-list-items dropdown-menu">
+                    <li class="toc-list-item"><a class="dropdown-item">Anim id</a></li>
+                    <li class="toc-list-item"><a class="dropdown-item">Est laboru</a></li>
+                </ul>
+            </li>
+      </ul>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const toggles = document.querySelectorAll('.dropdown-toggle');
+
+          toggles.forEach(function(toggle) {
+              toggle.addEventListener('click', function(event) {
+                  event.stopPropagation();
+                  const dropdown = new bootstrap.Dropdown(toggle);
+                  dropdown.toggle();
+              });
+          });
+
+          window.addEventListener('click', function() {
+              const dropdowns = document.querySelectorAll('.dropdown-menu.show');
+              dropdowns.forEach(function(dropdown) {
+                  const dropdownElement = dropdown.parentElement.querySelector('.dropdown-toggle');
+                  const bootstrapDropdown = new bootstrap.Dropdown(dropdownElement);
+                  bootstrapDropdown.hide();
+              });
+          });
+      });
+  </script>
+  
     <br>
     notes for layla: ive made this as a large column w/ no padding so you can change whatever in here and add your own padding to make it closer to the mockup
     <br>
