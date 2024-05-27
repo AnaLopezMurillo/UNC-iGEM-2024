@@ -108,3 +108,75 @@ footer a:hover {
     float:right;
     overflow-wrap: break-word;
 }
+
+/* ToC styles */
+/* ToC styles */
+.toc-header {
+    background: #EE8A8B;
+    padding: 5px 5px 0;
+    border-radius: 15px 15px 0 0;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.toc-heading {
+    font-size: 20px;
+    color: #fff;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+    font-weight: 600;
+    padding: 0 20px 0;
+}
+
+.toc-list-wrapper {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 15vh; /* note: this decides place on screen. for smaller toc we might want to make this bigger (so it fits in middle) */
+    max-height: calc(100vh - 20px); 
+    overflow-y: auto;
+}
+
+.toc-list {
+    border-radius: 0 0 15px 15px;
+    background: #EE8A8B;
+    margin: 0;
+    list-style: none;
+    padding: 0 17px;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.toc-list-header a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s ease;
+    font-size: 15px;
+}
+
+.toc-list-item a:hover,
+.toc-list-header a:hover {
+    box-shadow: 0 8px 15px rgb(246 90 100 / .55);
+    background: #FBC1BD;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.toc-list-items {
+    list-style: none;
+    padding-left: 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.show {
+    max-height: 500px; /* Adjust as needed */
+}
