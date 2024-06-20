@@ -180,3 +180,28 @@ footer a:hover {
 .show {
     max-height: 500px;
 }
+
+/* Team page css */
+.big_group_picture{
+    background-color: white;
+    padding:20%;
+}
+.team_members, .name_rows{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.team_image{
+    background-color: lightblue;
+    padding: 9%;
+    margin: 2% 0% 0% 0%;
+    border-radius: 50%;
+    background-image: url ("pfp.jpg");
+    background-position: cover;
+}
+.name{
+    background-color: #fcbcb8;
+    padding:1%;
+    border-radius: 15px;
+    /* margin: 1% 10% 2% 10%; */
+}
