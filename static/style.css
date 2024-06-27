@@ -186,33 +186,49 @@ footer a:hover {
     background-color: white;
     padding:20%;
 }
-.team_members, .name_rows, .job_rows{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
 .team_image{
     background-color: lightblue;
-    padding: 9%;
+    padding: 30%;
     margin: 2% 0% 0% 0%;
     border-radius: 50%;
-    background-image: url ("pfp.jpg");
-    background-position: cover;
 }
 .name{
     background-color: #fcbcb8;
     padding:1%;
     border-radius: 15px;
-    width:12%;
+    width:50%; 
+    /* change above WIDTH based on how everything alligns. */
     margin: .5% 0% 0% 0%;
+    text-align: center;
 }
 .job{
     background-color: #77cece;
     padding:.5%;
-    width:12%;
+    width:50%;
     border-radius: 15px;
     font-size: 12px;
     margin: .5% 0% 0% 0%;
     text-align: center;
+
+}
+
+
+
+.members {
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.person{
+    /* background-color: yellow; */
+    /* width:33%; */
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    padding: 0px;
 
 }
