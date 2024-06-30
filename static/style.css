@@ -80,8 +80,15 @@ footer a:hover {
     margin-bottom: 1rem;
     text-shadow: 1px 3px 3px rgba(80, 96, 100, 0.209);
 }
-.links a{
+/* description page styling */
+.resourceLinks a{
     color: #FFF7F7;
+}
+.links{
+    color:#ee8a8a;    
+}
+.links:hover{
+    color:#ffd972;
 }
 
 
