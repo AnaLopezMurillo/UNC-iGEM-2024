@@ -181,6 +181,7 @@ footer a:hover {
     max-height: 500px;
 }
 
+
 /* Team page css */
 .big_group_picture{
     background-color: white;
@@ -225,8 +226,6 @@ footer a:hover {
 
 }
 .person{
-    /* background-color: yellow; */
-    /* width:33%; */
     flex-basis: 33%;
     display: flex;
     flex-direction: column;
@@ -235,7 +234,62 @@ footer a:hover {
     padding: 0px;
 
 }
-/* 
-.person .info {
-    margin: 10px 0 10px;
-} */
+
+.center {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+}
+
+.team-popup{
+    text-align: center;
+    align-self: center;
+    width: 60vw;
+    height: 70vh;
+    background-color: #FBC1BD;
+    border-radius: 30px;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.team-popup .left {
+    padding-top: 40px;
+}
+
+.team-popup .name {
+    padding: 5px 10px 5px;
+    background-color: #EE8A8B;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    width: 25%;
+    margin-top: 2%;
+    margin-left: 5%;
+    border-radius: 10px;
+}
+
+.team-popup .name.job {
+    background-color: #ffffff92;
+    color: #EE8A8B;
+    font-size: 20px;
+    width: 20%;
+    border: 2px solid white;
+}
+
+.team-popup .description {
+    width: 40%;
+    text-align: left;
+    float:left;
+    height: 300px;
+    background-color: #ffffff82;
+    color: #EE8A8B;
+    border: 2px solid white;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-left:5%;
+}
+
+.team-popup .description p {
+    padding: 10px;
+}
