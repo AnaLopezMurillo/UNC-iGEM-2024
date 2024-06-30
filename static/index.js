@@ -128,8 +128,6 @@ for (let member of Object.keys(teamPrimary)) {
     div.appendChild(name);
     div.appendChild(job);
 
-    console.log(div);
-
     // grab members div from team.html + append
     let members = document.getElementsByClassName("members")[0];
     members.appendChild(div);
