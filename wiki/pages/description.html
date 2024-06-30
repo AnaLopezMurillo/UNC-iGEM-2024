@@ -6,52 +6,158 @@
 {% block page_content %}
 
 <div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Bronze Medal Criterion #3</h4>
-      <p>Describe how and why you chose your iGEM project.<p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/medals">2023 Medals Page</a> for more information.</p>
+
+  <!--Header-->
+  <div class="row justify-content-center mb-4 mt-2">
+    <h1 class="text-center header-text">DESCRIPTION</h1>
+  </div>
+
+  <!--ToC-->
+  <div class="col-lg-3">
+
+    <div class="toc-list-wrapper">
+        <div class="toc-header">
+            <h4 class="toc-heading">Contents</h4>
+        </div>
+        <ul class="toc-list">
+            <li class="toc-list-header">
+                <a class="dropdown-toggle-toc" aria-expanded="false" >Overview</a>
+                <ul class="toc-list-items">
+                    <li class="toc-list-item">
+                        <a class="dropdown-item" href="#pfas-what">
+                            What is PFAS (or PFOA)?
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="toc-list-header">
+                <a class="dropdown-toggle-toc" aria-expanded="false">Project Description</a>
+                <ul class="toc-list-items">
+                    <li class="toc-list-item">
+                        <a class="dropdown-item" href="#modeling">
+                            Modeling
+                        </a>
+                    </li>
+                    <li class="toc-list-item">
+                        <a class="dropdown-item" href="#exp-design">
+                            Experimental Design
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="toc-list-header">
+                <a class="dropdown-toggle-toc" aria-expanded="false" href="#refs">References</a>
+                <ul class="toc-list-items">
+                </ul>
+            </li>
+        </ul>
     </div>
   </div>
+
+   <!--Information Div-->
+   <div class="exp_div col-lg-8">
+    <h2 class="subheader" id="overview">OVERVIEW</h2>
+    <p>
+      &emsp; Our team aims to develop a therapeutic protein designed for pharmacological applications to regulate concentrations of perfluoroalkyl substances (PFAS), with a specific focus on targeting perfluorooctanoic acid (PFOA).This therapeutic project focuses on designing a novel approach to eliminate the environmental contaminant, perfluorooctanoic acid (PFOA), from the human bloodstream. This involves engineering a chimeric protein with two domains: one has a high affinity for PFOA while the other facilitates transcytosis of the whole peptide. After binding to PFOA in the bloodstream, this protein will facilitate its transcytosis across epithelial cells for excretion via the mucosal lining. 
+    </p>
+    <h2 class="subheader_small" id="pfas-what">What is PFAS (or PFOA)?</h2>
+        <div>
+            <p>
+                &emsp;PFAS is also known as per- and polyfluoroalkyl substances. These are a group of chemicals which are man-made that are used mainly for their special properties. These molecules consist of a chain of carbon atoms, where most of the hydrogens are replaced with fluorine. These fluorine-carbon bonds have lipid-like structure, making these “forever” chemicals because they resist degradation and accumulate in the environment. This strong carbon-fluorine bond creates stable structures that make PFAS resistant to heat, water, and stains. This very feature that makes them so useful in products such as non-stick cookware that also leads to their persistence in the environment. 
+            </p>
+            <p>
+                &emsp;The ubiquitous nature of PFAS has only been exacerbated due to mass PFAS pollution events. One of the greatest concerns with the pervasiveness of PFAS is bioaccumulation in living organisms and the resulting health consequences. According to a report from the U.S. Center for Disease Control and Prevention (CDC), PFAS was detectable in the blood of 98% of US citizens. Research studies have found links between Perfluorooctanoic acid (PFOA) and high cholesterol, thyroid disease, pregnancy-induced hypertension, ulcerative colitis, and kidney and testicular cancer. Furthermore, children experience sensitive developmental periods that make them more vulnerable to the effects of PFAS exposure. A systematic review of children's health literature has revealed a clear relationship between PFAS exposure and issues with dyslipidemia, immunity, and renal function.
+            </p>
+            <p>
+                &emsp;There is research ongoing to further understand the long-term risks of PFAS exposure, but it plays a role in the blood and environment becoming a concern. PFAS have also been linked to negative health outcomes like certain cancers and developmental problems. Scientists and researchers are working to develop safer alternatives and ways to remove PFAS from our environment that can also better an individual's health. 
+            </p>
+            <p>
+                &emsp;Per- and polyfluoroalkyl substances, commonly known as PFAS, are a large group of synthetic, lipid-like molecules consisting of a chain of carbon atoms with most of the hydrogens replaced with fluorine. 1The highly stable carbon-fluorine bond affords PFAS resistance to heat, water, or staining, resulting in its widespread application in developing non-stick cookware, water-repellent clothing, stain-resistant fabrics and carpets, some cosmetics, some firefighting foams, and products that resist grease, water, and oil1. This very feature leads to their moniker of “forever chemicals”, because of their persistence in the environment when exposure occurs1. 
+            </p>
+            <p>
+                &emsp;Perhaps one of the greatest concerns with the pervasiveness of PFAS is bioaccumulation in living organisms and the resulting health consequences. Concern regarding the potential health effects associated with exposure began in the early 2000s when perfluorooctanesulfonate (PFOS) was detected in the blood of polar bears in the Arctic. This concern was further exacerbated when the U.S. Center for Disease Control and Prevention (CDC) reported that these same compounds were detectable in the blood of 98% of Americans1. Since then, public health and life science research has been rapidly conducted and shown links between Perfluorooctanoic acid (PFOA) and high cholesterol, thyroid disease, pregnancy-induced hypertension, ulcerative colitis, premature births, kidney/testicular cancer, and, in children because they undergo sensitive periods of development, dyslipidemia, immunity, and renal function.1 1.
+            </p>
+            <p>
+                &emsp;Specifically, PFAS is attributed to inhibition of the production of immune response cells, thus decreasing the effectiveness of vaccines and causing people to be at higher risk for sickness from everyday sources.1
+            </p>
+            <p>
+                &emsp;Cases of mass PFAS pollution have been appearing due to increased testing. One of these cases took place in the same state as our team when in 2017, Chemours, a large chemical manufacturing plant in Fayetteville, North Carolina was found to have released over 2700 pounds of the GenX PFAS molecule through its smoke stacks. This toxic chemical infiltrated local air, water, and soil, contaminating the environment in communities over 18 miles away from the plant. Given the long-lasting nature of PFAS, the contamination has raised concern over the long-term effects it may have on the communities’ health. Already, testing has shown that residents in the area have blood PFAS levels higher than the national average. The number has only been growing as the plant continues to release PFAS into communities, mirroring the grim reality of PFAS pollution in the country.1
+            </p>
+            <p>
+                &emsp;As of January 2024, the EPA only limits the production of 329 PFAS,though companies are still able to both produce and import these chemicals by notifying the EPA of their reason for usage.1 The first national and legally enforceable limitation on PFAS levels in drinking water was only passed April 10th 20241. This new standard mandates that all water treatment facilities work toward testing and limiting PFAS levels but unfortunately it only covers five individual PFAS and a few PFAS mixtures. While this is a step in the right direction it is known that there are more than 15,000 synthetic chemicals classified as PFAS by the US Environmental Protection Agency (EPA) 1
+            </p>
+            <p>
+                &emsp;Research is ever-expanding but primarily focused on working to develop safer alternatives to PFAS and methods to remove it from our environment.
+            </p>
+            <p>
+                &emsp;We realize there needs to be a solution, not only for future prevention of PFAS contamination to the environment and humans, but to combat the existing problems affecting people at this very moment.
+            </p>
+            <p>
+                &emsp;Our team aims to develop a therapeutic protein, model focusing on pharmacological applications that regulate concentrations of perfluoroalkyl substances (PFAs), specifically targeting perfluorooctanoic acid (PFOA). This bioremediation project focuses on designing a novel approach to eliminate environmental contaminant, perfluorooctanoic acid (PFOA), from the human bloodstream. This involves engineering a chimeric protein with two domains: one has a high affinity for PFOA while the other facilitates transcytosis of the whole peptide. By binding to PFOA in the bloodstream, this protein will facilitate its transcytosis across epithelial cells for excretion via the mucosal lining. 
+            </p>
+        </div>
+    <h2 class="subheader" id="desc">PROJECT DESCRIPTION</h2>
+        <div>
+            <p>&emsp;Inspiration for our design comes from understanding where and how PFAS maneuvers in the body. When exposed to PFAS, distribution of PFAS is facilitated through noncovalent binding of serum proteins, such as Albumin1. To understand how albumin interacts with PFOA in the bloodstream is crucial for designing an effective therapeutic strategy. The native hsA molecule has four distinct binding sites for PFOA obtained through calorimetry experiments with hsA and PFOA: FA4 (Sudlow Binding Site I), FA6, FA7 (Sudlow Binding Site II), and crevice.1 Competition experiments performed with other known hsA-binding drugs further showed FA4 as the high affinity binding site of PFOA to hsA. Further structural analysis proved increased stabilization for PFOA molecules in this binding site from a greater number of intermolecular interactions. 
+            </p>
+            <p>&emsp;Having a method to bind these molecules is important, but the removal of this protein from the body is essential. Human serum albumin, especially an hsA-PFOA molecule complex, is too large to move across the interior of epithelial cells such as those found in lung vasculature. pIgR is a transmembrane protein that allows for the transport of other polymeric immunoglobulins, following the proteolytic cleavage of the pIgR protein1. A complex is taken into the cell via clathrin-mediated endocytosis where it travels along the endosomal transcytosis pathway.1 The hsA-PFOA molecule complex is incapable of undergoing transcytosis via the pIgR transmembrane protein alone. However, the PASR is a peptide created in 2018 capable of triggering the pIgR mediated transcytosis pathway we need.1 
+            </p>
+            <p>&emsp;Through the creation of novel chimera protein that has the compatibility to both bind to PFOA present in the bloodstream and trigger poly-immunoglobulin receptor (pIgR) mediated transcytosis, we enable a “capture-and-remove” system to rid the body of PFOA present in the bloodstream.
+            </p>
+        </div>
+    <h2 class="subheader_small" id="modeling">Modeling</h2>
+        <div>
+            <p>&emsp;Although the albumin pocket our domain is built off of should theoretically bind to albumin with a micromolar affinity, some problems arise. Firstly, it is unknown if the FA4 pocket of albumin which our binder is based off can fold stably by itself without being in the whole albumin protein. Secondly, albumin is a very unselective binder relative to other protein binders, and our chimera protein would work best and minimize potential adverse effects if the primary thing it binds to would be PFOA. Thirdly, considering the PFOA levels found in the blood of most exposed people, it would be beneficial if our PFOA binder had a higher binding affinity for PFOA so less total chimera protein would be needed to clear PFOA from the bloodstream. These three goals can begin to be realized with computational protein engineering.
+            </p>
+            <p>&emsp;To modify the Albumin FA4 pocket, we use LigandMPNN, a protein design tool from the Baker Lab at the University of Washington. LigandMPNN can take a protein structure bound with a ligand and improve the protein's amino acid sequence to enhance its binding affinity for that ligand while maintaining its overall fold. Proteins designed this way also tend to be more stable than their natural counterparts.
+            </p>
+            <p>&emsp;We used the consensus sequence from these engineering efforts and predicted its structure with AlphaFold3.</p>
+            <p>&emsp;The main purpose of the PFOA binder is the removal of PFOA from the body, and utilizing pharmacological modeling provides a mathematical way of determining the amount of PFOA removed from the bloodstream. Specifically, having an understanding of how the variation of initial concentrations of substances, such as PFOA, the binding energies of proteins, biochemical interactions, and other parameters, can affect the PFOA removal from the bloodstream is crucial in determining the viability of our project. 
+            </p>
+            <p>&emsp;Using the initial Albumin binding to PFOA Model we can understand how albumin interacts with PFOA in the bloodstream which is crucial for designing an effective therapeutic strategy. Then we can use a second Binder versus Albumin Competition Model to simulate the interaction dynamics between PFOA and albumin, and PFOA and our engineered protein. From this we can understand competition dynamics and predict how changes affect the steady states or final concentrations of molecules. The third Transcytosis Model aims to simulate the expulsion of PFOA by leveraging a novel biomolecule designed to bind PFOA and facilitate its transport across cellular compartments. In this model, we consider five primary species: the novel biomolecule, PFOA, the complex formed by the biomolecule and PFOA, an intermediate transcytosis complex, and the transcytosed PFOA. Initially, the novel biomolecules and PFOA are present in the system. The binding process is modeled by the rate constant, which describes the formation of the biomolecule-PFOA complex.</p>
+            <p>&emsp;Our focus is on optimizing the protein's binding efficiency and transcytosis rate to ensure maximum removal of PFOA.
+            </p>
+        </div>
+    <h2 class="subheader_small" id="exp-design">Experimental Design</h2>
+        <div>
+            <p>&emsp;Human serum albumin (hSA) serves as an ideal control due to its well-documented interactions with PFAs, particularly PFOA. By using albumin as a control, we establish a baseline for comparison against our engineered proteins. We will investigate how modifications, such as engineering the FA4 binding pocket or incorporating transcytosis-promoting sequences like PASR, affect the binding affinity of the protein for PFOA. 
+            </p>
+            <p>&emsp;We want to synthesize plasmids containing the sequence of the highly selective FA4 binding pocket of human serum albumin (hSA) bound to the PASR (peptide that triggers pIgR-mediated transcytosis) sequence. One of these plasmids will contain the native sequence of FA4 modified slightly to maximize stability, and the other will contain a completelyn engineered FA4 pocket. ] This comparative study will validate our methodology and ensure that any observed changes in binding affinity are attributable to the engineered modifications rather than inherent variability in albumin's binding capabilities.To test the binding affinity of our sequences and establish a control group, we have three possible laboratory techniques available: Biolayer Interferometry (BLI), ELISA, and Isothermal titration calorimetry. 
+            </p>
+            <p>&emsp;In the case we decide to further evaluate unmodified albumin to strengthen our control group, we will utilize BLI. BLI detects shifts in signal intensity due to the size of the receptor added during the association phase. Here we will immobilize PFOA through hydrophobic interactions allowing unbound albumin to attach. [3]
+            </p>
+        </div>
+    <h2 class="subheader" id="refs">REFERENCES</h2>
+        <div>
+            <ol class = "links">
+              <li> <a href =https://www.niehs.nih.gov/health/topics/agents/pfc> https://www.niehs.nih.gov/health/topics/agents/pfc </a> </li>
+              <li> <a href =  https://www.niehs.nih.gov/health/topics/agents/pfc> https://www.niehs.nih.gov/health/topics/agents/pfc</a> </li>
+              <li> <a href = https://www.epa.gov/pfas/pfas-explained> https://www.epa.gov/pfas/pfas-explained</a></li>
+              <li> <a href = https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9035516/> https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9035516/</a></li>
+              <li> <a href = https://pubmed.ncbi.nlm.nih.gov/32950793/> https://pubmed.ncbi.nlm.nih.gov/32950793/</a></li>
+              <li> <a href = https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5551129/> https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5551129/</li>
+              <li><a href = https://www.atsdr.cdc.gov/pfas/health-effects/index.html> https://www.atsdr.cdc.gov/pfas/health-effects/index.html</a></li>
+              <li><a href = https://www.northcarolinahealthnews.org/2021/09/08/wells-polluted-with-pfas-found-18-miles-from-chemours-chemical-plant/> https://www.northcarolinahealthnews.org/2021/09/08/wells-polluted-with-pfas-found-18-miles-from-chemours-chemical-plant/</li>
+              <li> <a href = https://www.epa.gov/assessing-and-managing-chemicals-under-tsca/risk-management-and-polyfluoroalkyl-substances-pfas> https://www.epa.gov/assessing-and-managing-chemicals-under-tsca/risk-management-and-polyfluoroalkyl-substances-pfas</a></li>
+              <li> <a href = https://www.epa.gov/newsreleases/biden-harris-administration-finalizes-first-ever-national-drinking-water-standard#:~:text=The%20rule%20also%20sets%20a,impacts%20in%20adults%2C%20and%20immune/> https://www.epa.gov/newsreleases/biden-harris-administration-finalizes-first-ever-national-drinking-water-standard#:~:text=The%20rule%20also%20sets%20a,impacts%20in%20adults%2C%20and%20immune</a></li>
+              <li> <a href = https://www.niehs.nih.gov/health/topics/agents/pfc#:~:text=PFAS%20are%20a%20group%20of,the%20U.S.%20Environmental%20Protection%20Agency> https://www.niehs.nih.gov/health/topics/agents/pfc#:~:text=PFAS%20are%20a%20group%20of,the%20U.S.%20Environmental%20Protection%20Agency</a></li>
+              <li> <a href = https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7980502/>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7980502/</li>
+              <li></li>
+              <li><a href = https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5977230/>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5977230/</li>
+              <li><a href = https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7956327/>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7956327/</li>
+              <li><a href = https://pubs.acs.org/doi/10.1021/acsomega.1c05659>https://pubs.acs.org/doi/10.1021/acsomega.1c05659</a></li>
+            </ol>
+        
+          
+          
+            
+            
+            <!-- 13. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7980502/ -->
+            
+
+        </div>
+  </div>
 </div>
 
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>What should this page contain?</h2>
-    <hr>
-    <ul>
-      <li>A clear and concise description of your project.</li>
-      <li>A detailed explanation of why your team chose to work on this particular project.</li>
-      <li>References and sources to document your research.</li>
-      <li>Use illustrations and other visual resources to explain your project.</li>
-    </ul>
-  </div>
-  <div class="col-lg-4">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul>
-      <li><a href="https://2022.igem.wiki/dtu-denmark/description">2022 DTU-Denmark</a></li>
-      <li><a href="https://2019.igem.org/Team:ITESO_Guadalajara/Description">2019 ITESO Guadalajara</a></li>
-      <li><a href="https://2020.igem.org/Team:Technion-Israel/Description">2020 Technion Israel</a></li>
-      <li><a href="https://2020.igem.org/Team:Botchan_Lab_Tokyo/Description">2020 Botchan Lab Tokyo</a></li>
-      <li><a href="https://2020.igem.org/Team:St_Andrews/Description">2020 St Andrews</a></li>
-      <li><a href="https://2020.igem.org/Team:MIT/Description">2020 MIT</a></li>
-    </ul>
-  </div>
-</div>
-
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>Some advice</h2>
-    <hr>
-    <p>We encourage you to put up a lot of information and content on your wiki, but we also encourage you to include summaries as much as possible. If you think of the sections in your project description as the sections in a publication, you should try to be concise, accurate, and unambiguous in your achievements. Your Project Description should include more information than your project abstract.</p>
-  </div>
-  <div class="col-lg-4">
-    <h2>References</h2>
-    <hr>
-    <p>iGEM teams are encouraged to record references you use during the course of your research. They should be posted somewhere on your wiki so that judges and other visitors can see how you thought about your project and what works inspired you.</p>
-  </div>
-</div>
 
 {% endblock %}
