@@ -113,6 +113,7 @@ for (let member of Object.keys(teamPrimary)) {
     let job = document.createElement("div");
 
     div.classList.add("person");
+    div.id = member;
     team_img.classList.add("team_image");
 
     // append member name
@@ -132,3 +133,22 @@ for (let member of Object.keys(teamPrimary)) {
     let members = document.getElementsByClassName("members")[0];
     members.appendChild(div);
 }
+
+const members = document.querySelectorAll("div.person");
+
+// going to need to change the way we get this
+const popup = document.getElementById("test");
+members.forEach(function(member) {
+    member.addEventListener('click', function(event) {
+        event.stopPropagation();
+        popup.style.display = "block";
+        popup.style.visibility = "visible";
+    })
+});
+
+window.addEventListener('click', function(event) {
+    if (!document.getElementById('test').contains(event.target)) {
+        popup.style.display = 'none';
+        popup.style.visibility = 'hidden';
+    }
+});

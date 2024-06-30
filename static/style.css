@@ -249,8 +249,12 @@ footer a:hover {
     height: 70vh;
     background-color: #FBC1BD;
     border-radius: 30px;
-    vertical-align: middle;
     align-items: center;
+    position:fixed;
+    top:20vh;
+    left:30vh;
+    display:none;
+    visibility:hidden;
 }
 
 .team-popup .left {
