@@ -191,33 +191,36 @@ footer a:hover {
     background-color: white;
     padding:20%;
 }
+
 .team_image{
     background-color: lightblue;
     padding: 30%;
     margin: 2% 0% 0% 0%;
     border-radius: 50%;
 }
+
 .name{
+    font-size: 20px;
+    color: #855754;
     background-color: #fcbcb8;
+    letter-spacing: .5px;
     padding:1%;
     border-radius: 15px;
     width:50%; 
     /* change above WIDTH based on how everything alligns. */
-    margin: .5% 0% 0% 0%;
+    margin: 2% 0% .5% 0%;
     text-align: center;
 }
+
 .job{
     background-color: #77cece;
-    padding:.5%;
+    padding:1%;
     width:50%;
     border-radius: 15px;
-    font-size: 12px;
-    margin: .5% 0% 0% 0%;
+    font-size: 15px;
+    margin: .5% 0% 4% 0%;
     text-align: center;
-
 }
-
-
 
 .members {
     display: flex;
@@ -227,8 +230,6 @@ footer a:hover {
 
 }
 .person{
-    /* background-color: yellow; */
-    /* width:33%; */
     flex-basis: 33%;
     display: flex;
     flex-direction: column;
@@ -237,7 +238,66 @@ footer a:hover {
     padding: 0px;
 
 }
-/* 
-.person .info {
-    margin: 10px 0 10px;
-} */
+
+.center {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+}
+
+.team-popup{
+    text-align: center;
+    align-self: center;
+    width: 60vw;
+    height: 70vh;
+    background-color: #FBC1BD;
+    border-radius: 30px;
+    align-items: center;
+    position:fixed;
+    top:20vh;
+    left:30vh;
+    display:none;
+    visibility:hidden;
+}
+
+.team-popup .left {
+    padding-top: 40px;
+}
+
+.team-popup .name {
+    padding: 5px 10px 5px;
+    background-color: #EE8A8B;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    width: 25%;
+    margin-top: 2%;
+    margin-left: 5%;
+    border-radius: 10px;
+}
+
+.team-popup .name.job {
+    background-color: #ffffff92;
+    color: #EE8A8B;
+    font-size: 20px;
+    width: 20%;
+    border: 2px solid white;
+}
+
+.team-popup .description {
+    width: 40%;
+    text-align: left;
+    float:left;
+    height: 300px;
+    background-color: #ffffff82;
+    color: #EE8A8B;
+    border: 2px solid white;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-left:5%;
+}
+
+.team-popup .description p {
+    padding: 10px;
+}
