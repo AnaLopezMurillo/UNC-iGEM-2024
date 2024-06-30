@@ -48,42 +48,43 @@ tocLinks.forEach(function(link) {
 
 // populate team.html w/ members data
 const teamPrimary = {
-    "Annika Bridge" : "Human Practices Co-lead",
-    "Anusha Gupta" : "Secretary",
-    "Corinne Drabenstott" : "",
-    "Daniellejen Nares" : "Fundraising",
-    "Dominic Kubissa" : "Human Practices",
-    "Elizabeth Krist" : "Dry Lab",
     "Gavin Wiltshire" : "Team Lead",
-    "Grant Holland" : "Wet Lab",
-    "Heng Annika Shi" : "Social Media Lead",
+    "Corinne Drabenstott" : "",
+    "Annika Bridge" : "Human Practices Co-lead",
+    "Pristine Onuoha" : "Human Practices Co-Lead",
+    "Dominic Kubissa" : "Human Practices",
+    "Logan Amos": "Human Practices",
+    "Sriya Darsi" : "Human Practices",
+    "Anusha Gupta" : "Secretary",
+    "Daniellejen Nares" : "Fundraising",
     "Isabel Lopez Murillo" : "Wiki Lead",
     "Ishita Siddamreddy" : "Wiki",
-    "Jack Titus" : "Social Media",
-    "Joshua Lopez" : "Wet Lab Lead",
-    "Julia Zhu" : "",
-    "Keshav Saxena" : "",
-    "Lahari  Pokala" : "Wet Lab",
     "Layla Gusa" : "Wiki",
-    "Logan Amos": "Human Practices",
-    "Moiz Chomelawala": "",
+    "Joshua Lopez" : "Wet Lab Lead",
+    "Lahari  Pokala" : "Wet Lab",
+    "Grant Holland" : "Wet Lab",
     "Nishant Dengi" : "Wet Lab",
-    "Osvaldo Linares": "Dry Lab",
-    "Pristine Onuoha" : "Human Practices Co-Lead",
-    "Samantha Carew" : "",
-    "Sriya Darsi" : "Human Practices",
     "Uditi Patil" : "Wet Lab",
     "Zaid Syed" : "Wet Lab",
+    "Heng Annika Shi" : "Social Media Lead",
+    "Jack Titus" : "Social Media",
+    "Elizabeth Krist" : "Dry Lab",
+    "Osvaldo Linares": "Dry Lab",
+    "Julia Zhu" : "",
+    "Keshav Saxena" : "",
+    "Moiz Chomelawala": "",
+    "Samantha Carew" : "",
 }
 
 const teamSecondary = {
-    "Annika Bridge" : "",
-    "Anusha Gupta" : "Literature Review, Project Ideation",
+    "Gavin Wiltshire" : "",
     "Corinne Drabenstott" : "",
+    "Annika Bridge" : "",
+    "Pristine Onuoha" : "",
+    "Anusha Gupta" : "Literature Review, Project Ideation",
     "Daniellejen Nares" : "",
     "Dominic Kubissa" : "",
     "Elizabeth Krist" : "Human Practices, Fundraising",
-    "Gavin Wiltshire" : "",
     "Grant Holland" : "Literature Review, Project Ideation",
     "Heng Annika Shi" : "Human Practices, Collaboration Lead, Fundraising",
     "Isabel Lopez Murillo" : "",
@@ -98,13 +99,38 @@ const teamSecondary = {
     "Moiz Chomelawala": "",
     "Nishant Dengi" : "Literature Review, Project Ideation",
     "Osvaldo Linares": "Wet Lab, Fundraising",
-    "Pristine Onuoha" : "",
     "Samantha Carew" : "",
     "Sriya Darsi" : "",
     "Uditi Patil" : "Literature Review, Project Ideation",
     "Zaid Syed" : "Literature Review, Project Ideation",
 }
 
+let i = 0;
 for (let member of Object.keys(teamPrimary)) {
-    
+    let div = document.createElement("div");
+    let team_img = document.createElement("div");
+    let name = document.createElement("div");
+    let job = document.createElement("div");
+
+    div.classList.add("person");
+    team_img.classList.add("team_image");
+
+    // append member name
+    name.classList.add("name");
+    name.innerHTML = member;
+
+    // append member primary job
+    job.classList.add("job");
+    job.innerHTML = teamPrimary[member];
+
+    // append divs to each other
+    div.appendChild(team_img);
+    div.appendChild(name);
+    div.appendChild(job);
+
+    console.log(div);
+
+    // grab members div from team.html + append
+    let members = document.getElementsByClassName("members")[0];
+    members.appendChild(div);
 }

@@ -186,33 +186,36 @@ footer a:hover {
     background-color: white;
     padding:20%;
 }
+
 .team_image{
     background-color: lightblue;
     padding: 30%;
     margin: 2% 0% 0% 0%;
     border-radius: 50%;
 }
+
 .name{
+    font-size: 20px;
+    color: #855754;
     background-color: #fcbcb8;
+    letter-spacing: .5px;
     padding:1%;
     border-radius: 15px;
     width:50%; 
     /* change above WIDTH based on how everything alligns. */
-    margin: .5% 0% 0% 0%;
+    margin: 2% 0% .5% 0%;
     text-align: center;
 }
+
 .job{
     background-color: #77cece;
-    padding:.5%;
+    padding:1%;
     width:50%;
     border-radius: 15px;
-    font-size: 12px;
-    margin: .5% 0% 0% 0%;
+    font-size: 15px;
+    margin: .5% 0% 4% 0%;
     text-align: center;
-
 }
-
-
 
 .members {
     display: flex;
