@@ -80,6 +80,10 @@ footer a:hover {
     margin-bottom: 1rem;
     text-shadow: 1px 3px 3px rgba(80, 96, 100, 0.209);
 }
+.links a{
+    color: #FFF7F7;
+}
+
 
 .subheader_small {
     font-size: 25px;
@@ -98,8 +102,8 @@ footer a:hover {
 }
 
 .exp_div {
-    background-color: #FBC1BD;
-    color: #FFFFFF;
+    background-color: #f6b7b3;
+    color: #ffffff;
     border-radius: 30px;
     padding: 40px;
     padding-top: 30px;
@@ -235,6 +239,7 @@ footer a:hover {
 
 }
 
+
 .center {
     align-items: center;
     margin-left: auto;
@@ -296,4 +301,40 @@ footer a:hover {
 
 .team-popup .description p {
     padding: 10px;
+}
+
+/* popup styling */
+.popup{
+    background-color: #FCBCB8;
+    width:60%;
+    border-style: solid;
+    border-width: 20px;
+    border-color: #fcbcb84d;
+
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 4fr;
+}
+.memberName{
+    background-color: #ee8a8a;
+    width:fit-content;
+    margin:1%;
+    grid-row: 1;
+    grid-column: 1;
+
+}
+.roles{
+    background-color: #f4cecb;
+    width:fit-content;
+    margin:1%;
+    grid-row: 2;
+    grid-column: 1;
+
+}
+.description{
+    background-color: #f4cecb;
+    padding: 20%;
+    grid-row: 3;
+    grid-column: 1;
 }
