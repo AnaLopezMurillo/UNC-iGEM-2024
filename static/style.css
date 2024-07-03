@@ -80,10 +80,6 @@ footer a:hover {
     margin-bottom: 1rem;
     text-shadow: 1px 3px 3px rgba(80, 96, 100, 0.209);
 }
-.links a{
-    color: #FFF7F7;
-}
-
 
 .subheader_small {
     font-size: 25px;
@@ -102,8 +98,8 @@ footer a:hover {
 }
 
 .exp_div {
-    background-color: #f6b7b3;
-    color: #ffffff;
+    background-color: #FBC1BD;
+    color: #FFFFFF;
     border-radius: 30px;
     padding: 40px;
     padding-top: 30px;
