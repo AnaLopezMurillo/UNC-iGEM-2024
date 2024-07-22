@@ -1,4 +1,331 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
+      padding-left: 190px;
+    }
+    .center {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .book {
+      width: 400px;
+      height: 300px;
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .pages {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    .page {
+      width: 530px;
+      height: 600px; 
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 7mm;
+      margin: 0 6px;
+      transform-style: preserve-3d;
+      transform-origin: left;
+      transition: 0.25s;
+      box-shadow: 1px 2px 0 0 rgba(0,0,0,0.15), 1px 3px 1px 0 rgba(0,0,0,0.1);
+    }
+    .page-side {
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 45px 30px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 7mm;
+      position: absolute;
+      top: 0;
+      left: 0;
+      backface-visibility: hidden;
+    }
+    .page-header {
+      width: 100%;
+    }
+    .page-title {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 40px;
+      font-weight: 500;
+    }
+    .page-subtitle {
+      font-size: 12px;
+      font-weight: 300;
+    }
+    .page-content {
+      flex-grow: 1;
+      font-size: 14px;
+      display: flex;
+      align-items: flex-end;
+    }
+    .page-footer {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+    .pg-no {
+      width: 14px;
+      padding: 0 15px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      color: rgb(40,40,40);
+      background: white;
+      border-radius: 3mm;
+    }
+    .front {
+      background: rgb(255,228,130);
+      color: rgb(40,40,40);
+      padding-left: 40px;
+    }
+    .back {
+      background: rgb(40,40,40);
+      color: white;
+      padding-right: 40px;
+      transform: rotateY(180deg);
+    }
+    .beads {
+      position: absolute;
+      top: 0;
+      left: -12px;
+      height: 270px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      z-index: 9999;
+    }
+    .bead {
+      width: 36px;
+      height: 12px;
+      background: white;
+      border-radius: 5mm;
+      z-index: 9999;
+    }
+    .controls {
+      width: 350px;
+      height: fit-content;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 300px;     /* changes position of arrow_back and arrow_front */
+      padding-left: 150px;
+    }
+    .controls button {
+      background: white;
+      width: 40px;
+      height: 40px;
+      border: 0.4mm solid rgb(40,40,40);
+      border-radius: 50%;
+      outline: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TO DO: add ToC, add colors, add arrow icons, add binding for the pages, -->
+  <div class="center">
+    <div class="book">
+      <div class="pages">
+
+          <div class="beads">
+            <div class="bead"></div>
+            <div class="bead"></div>
+            <div class="bead"></div>
+            <div class="bead"></div>
+          </div>
+
+        <div class="page active">
+          <div class="page-side front">
+            <div class="page-header">
+              <div class="page-title">
+                Sports
+                <span></span>
+              </div>
+              <div class="page-subtitle">Client Name</div>
+            </div>
+            <div class="page-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nesciunt excepturi voluptas ullam totam, earum beatae aperiam, dolorum doloribus obcaecati eos expedita aut voluptatibus architecto.
+            </div>
+            <div class="page-footer">
+              <span>May 2023</span>
+              <span class="pg-no">1</span>
+            </div>
+          </div>
+
+          <div class="page-side back">
+            <div class="page-header">
+              <div class="page-title">
+                Movies
+                <span></span>
+              </div>
+              <div class="page-subtitle">Client Name</div>
+            </div>
+            <div class="page-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nesciunt excepturi voluptas ullam totam, earum beatae aperiam, dolorum doloribus obcaecati eos expedita aut voluptatibus architecto.
+            </div>
+            <div class="page-footer">
+              <span>May 2023</span>
+              <span class="pg-no">2</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="page">
+          <div class="page-side front">
+            <div class="page-header">
+              <div class="page-title">
+                Shows
+                <span></span>
+              </div>
+              <div class="page-subtitle">Client Name</div>
+            </div>
+            <div class="page-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nesciunt excepturi voluptas ullam totam, earum beatae aperiam, dolorum doloribus obcaecati eos expedita aut voluptatibus architecto.
+            </div>
+            <div class="page-footer">
+              <span>May 2023</span>
+              <span class="pg-no">3</span>
+            </div>
+          </div>
+
+          <div class="page-side back">
+            <div class="page-header">
+              <div class="page-title">
+                Books
+                <span></span>
+              </div>
+              <div class="page-subtitle">Client Name</div>
+            </div>
+            <div class="page-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nesciunt excepturi voluptas ullam totam, earum beatae aperiam, dolorum doloribus obcaecati eos expedita aut voluptatibus architecto.
+            </div>
+            <div class="page-footer">
+              <span>May 2023</span>
+              <span class="pg-no">4</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="page">
+          <div class="page-side front">
+            <div class="page-header">
+              <div class="page-title">
+                Plays
+                <span></span>
+              </div>
+              <div class="page-subtitle">Client Name</div>
+            </div>
+            <div class="page-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nesciunt excepturi voluptas ullam totam, earum beatae aperiam, dolorum doloribus obcaecati eos expedita aut voluptatibus architecto.
+            </div>
+            <div class="page-footer">
+              <span>May 2023</span>
+              <span class="pg-no">5</span>
+            </div>
+          </div>
+
+          <div class="page-side back">
+            <div class="page-header">
+              <div class="page-title">
+                Jousting
+                <span></span>
+              </div>
+              <div class="page-subtitle">Client Name</div>
+            </div>
+            <div class="page-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nesciunt excepturi voluptas ullam totam, earum beatae aperiam, dolorum doloribus obcaecati eos expedita aut voluptatibus architecto.
+            </div>
+            <div class="page-footer">
+              <span>May 2023</span>
+              <span class="pg-no">6</span>
+            </div>
+          </div>
+        </div>
+        <div class="page"></div>
+      </div>
+    </div>
+    <div class="controls">
+      <button type="button" class="btn" onclick="previous()"> <span>arrow_back</span></button>
+      <button type="button" class="btn" onclick="next()"> <span>arrow_forward</span></button>
+    </div>
+  </div>
+
+  <script>
+    function setIndex(){
+      let pages = document.querySelectorAll(".page")
+      for(var i=0;i<pages.length;i++){
+        pages[i].style.zIndex = pages.length - i;
+      }
+    }
+
+    setIndex();
+
+    function previous(){
+      let active = document.querySelector(".active")
+      let prevSib = active.previousElementSibling
+      active.className="page"
+      prevSib.className = "page active"
+      setIndex()
+      prevSib.style.transform = "rotateY(0deg)";
+      let prevSib2 = prevSib.previousElementSibling
+      if(prevSib2 && prevSib2.className =="page"){
+        prevSib2.style.zIndex = "9998"
+      }
+    }
+
+    function next(){
+      let active = document.querySelector(".active")
+      let nextSib = active.nextElementSibling
+      active.style.transform = "rotateY(180deg)"
+      active.className="page";
+      setIndex()
+      active.style.zIndex = "9998";
+      if(nextSib){
+        nextSib.className = "page active";
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- {% extends "layout.html" %}
   
 {% block title %}Notebook{% endblock %}
 {% block lead %}Document the dates you worked on your project. This should be a detailed account of the work done each day for your project.{% endblock %}
@@ -31,4 +358,4 @@
   </div>
 </div>
 
-{% endblock %}
+{% endblock %} -->
