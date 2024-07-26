@@ -46,6 +46,23 @@ tocLinks.forEach(function(link) {
 
 });
 
+const refLinks = document.querySelectorAll('.links');
+refLinks.forEach(function(link) {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetEl = document.getElementById(targetId);
+        const offset = window.innerHeight / 4;
+        const targetPos = targetEl.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({
+            top: targetPos,
+            behavior: "smooth"
+        });
+    })
+
+});
+
+
 // populate team.html w/ members data
 const teamPrimary = {
     "Gavin Wiltshire" : "Team Lead",
