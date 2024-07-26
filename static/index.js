@@ -121,6 +121,35 @@ const teamSecondary = {
     "Uditi Patil" : "Literature Review, Project Ideation",
     "Zaid Syed" : "Literature Review, Project Ideation",
 }
+const personBio = {
+    "Gavin Wiltshire" : "Biomedical Engineering \n Gavin is a second year Undergraduate student at the University of North Carolina-Chapel Hill. Gavin Was born and raised in in San Antonio, TX, but has always had the desire to collaborate with people from diverse backgrounds and different perspectives to create impactful technology and discoveries. iGEM has been the perfect opportunity for him to experience this: with students from a diverse set of majors and focuses cross-collaborating for the development of a project emphasizing improving human health and lives. ",
+    "Corinne Drabenstott" : "",
+    "Annika Bridge" : "Biochemistry B.S.",
+    "Pristine Onuoha" : "Biology B.S.",
+    "Anusha Gupta" : "Neuroscience B.S. Chemistry minor",
+    "Daniellejen Nares" : "Business Administration",
+    "Dominic Kubissa" : "Biology B.S",
+    "Elizabeth Krist" : "Quantitative Biology B.S.",
+    "Grant Holland" : "Biomedical Engineering B.S",
+    "Heng Annika Shi" : "Biology & Media and Journalism B.A.",
+    "Isabel Lopez Murillo" : "Computer Science B.S.",
+    "Ishita Siddamreddy" : "Computer Science B.S., Statistics and Analytics B.S",
+    "Jack Titus" : "Biology B.S.",
+    "Joshua Lopez" : "Biochemistry B.S.",
+    "Julia Zhu" : "",
+    "Keshav Saxena" : "",
+    "Lahari  Pokala" : "Biochemistry BS",
+    "Layla Gusa" : "Biology on the quantitative track B.S.",
+    "Logan Amos": "Biology B.S., Management and Society B.A.",
+    "Moiz Chomelawala": "",
+    "Nishant Dengi" : "Biomedical Engineering B.S., Mathematics B.A.",
+    "Osvaldo Linares": "Biomedical Engineering B.S.  Neuro Science minor ",
+    "Samantha Carew" : "",
+    "Sriya Darsi" : "Neuroscience B.S.",
+    "Uditi Patil" : "Biomedical Engineering B.S.",
+    "Zaid Syed" : "Biology B.S.",
+
+}
 
 let i = 0;
 for (let member of Object.keys(teamPrimary)) {
