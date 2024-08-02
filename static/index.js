@@ -170,7 +170,7 @@ const popup = document.getElementById("test");
 members.forEach(function(member) {
     member.addEventListener('click', function(event) {
         event.stopPropagation();
-        popup.style.display = "block";
+        // popup.style.display = "block";
         popup.style.visibility = "visible";
     })
 });
