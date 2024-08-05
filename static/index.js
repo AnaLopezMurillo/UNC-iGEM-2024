@@ -112,7 +112,7 @@ const personBio = {
     "Annika Bridge" : "Biochemistry B.S.",
     "Pristine Onuoha" : "Biology B.S. \n Pristine is a first-year biology major at UNC-Chapel Hill. She is ardently passionate about molecular biology, cellular biology, and bioengineering, which drew her to iGEM. As a part of iGEM, she is keen to build connections with those similarly passionate about these fields and explore ideas that spark innovation.",
     "Anusha Gupta" : "Neuroscience B.S. Chemistry minor \n Anusha is a second year undergraduate student at the University of North Carolina-Chapel Hill pursuing a major in Neuroscience and a minor in Chemistry. Anusha was born and raised in New Jersey but strives to learn and explore in a diverse and interdisciplinary environment. As someone who values continuous learning and knowledge sharing, she was drawn to iGEM's commitment to education and the development of future leaders in research. She is excited to contribute to innovative research projects developing biomedical and biosynthetic solutions to address global health challenges. She looks forward to building lasting connections within the iGEM community and gaining insights that will shape her future professional healthcare endeavors and personal growth.",
-    "Aryan Kokkanti": "Biology & Applied Mathematics B.S \n ",
+    "Aryan Kokkanti": "Biology & Applied Mathematics B.S \n Aryan is a second year Biology and Applied Math student and UNC Chapel Hill from Cary, NC. He is passionate about bridging biology and math together to find interesting results in the biophysical world. iGEM provides the provides the occassion for him to do such by being able to mode biological interactions with mathematical systems.",
     "Daniellejen Nares" : "Business Administration \n Danielle is a junior business major at UNC-Chapel Hill from Norwalk, Connecticut. She has always been interested in pursuing a career at the intersection of business and STEM. Danielle is grateful for the opportunity to participate in iGEM and collaborate with individuals who are enthusiastic about science education and engineering technologies that can better the community.",
     "Dominic Kubissa" : "Biology B.S",
     "Elizabeth Krist" : "Quantitative Biology B.S.",
@@ -169,14 +169,62 @@ for (let member of Object.keys(teamPrimary)) {
 const members = document.querySelectorAll("div.person");
 
 // going to need to change the way we get this
-const popup = document.getElementById("test");
-members.forEach(function(member) {
+// const popup = document.getElementById("test");
+for (let bio of Object.keys(personBio)){
+    
     member.addEventListener('click', function(event) {
+        let center = document.createElement("div");
+    center.classList.add("center");
+
+    let popup = document.createElement("div");
+    popup.classList.add("team-popup");
+
+
+    let r = document.createElement("div");
+    r.classList.add("right");
+    let picture = document.createElement("div");
+    picture.classList.add("memberPicture");
+
+    let l = document.createElement("div");
+    l.classList.add("left");
+    let name = document.createElement("div")
+    name.classList.add("name");
+
+    let job = document.createElement("div")
+    job.classList.add("name job");
+
+    let description = document.createElement("div")
+    description.classList.add("description");
+    let p = document.createElement("p");
+    
+
+    center.append(popup);
+    popup.appendChild(r);
+    popup.appendChild(l);
+
+    r.appendChild(picture);
+
+    l.appendChild(name);
+    name.innerHTML= bio;
+
+    l.appendChild(job);
+    job.innerHTML= teamSecondary[bio]
+
+    l.appendChild(description);
+    
+    description.appendChild(p);
+    p.innerHTML=personBio[bio]
+
         event.stopPropagation();
         // popup.style.display = "block";
         popup.style.visibility = "visible";
+        
     })
-});
+}
+
+// members.forEach(function(member) {
+    
+// });
 
 window.addEventListener('click', function(event) {
     if (!document.getElementById('test').contains(event.target)) {
