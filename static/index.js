@@ -144,6 +144,17 @@ for (let member of Object.keys(teamPrimary)) {
     let name = document.createElement("div");
     let job = document.createElement("div");
 
+    // example for how create an element and add class
+    let h1 = document.createElement("h1");
+    h1.classList.add("h1_class");
+
+    let div1 = document.createElement("div");
+    div1.classList.add("right")
+    let div2 = document.createElement("div");
+    div2.classList.add("memberPicture")
+    div1.appendChild(div2);
+
+
     div.classList.add("person");
     div.id = member;
     team_img.classList.add("team_image");
