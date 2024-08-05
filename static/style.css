@@ -214,7 +214,7 @@ footer a:hover {
 
 .job{
     background-color: #77cece;
-    padding:1%;
+    padding:2%;
     width:50%;
     border-radius: 15px;
     font-size: 15px;
@@ -262,14 +262,9 @@ footer a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* display:none; */
+    display:none; 
     visibility:hidden;
-}
-
-.team-popup .left {
     padding-top: 40px;
-    width: 55%;
-
 }
 
 .team-popup .name {
@@ -306,24 +301,35 @@ footer a:hover {
     font-size: 20px;
     border-radius: 10px;
     margin-left:5%;
+    overflow-y:scroll;
    
 }
 
 .team-popup .description p {
     padding: 10px;
+    font-size: 17px;
 }
+
+.team-popup .left {
+    width: 60%;
+    float: left;
+}
+
 .team-popup .right{
-    width: 45%;
-    /* display: flex;
-    justify-content: space-around; */
+    width: 40%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
 
 }
-.team-popup .memberPicture{
-    background-image: url("../static/images/person.png");
-    background-size: cover;
-    margin: 10% 10% 5% 10%;
+.team-popup .memberPicture {
+    align-items: center;
+}
+
+.team-popup .memberPicture img{
+    right: 30px;
+    justify-content: center;
     width: 80%;
-    height: 85%;
-    border: 2px solid black; /*change color as needed  */
+    border: 2px solid rgb(255, 255, 255); 
     border-radius: 10%;
 }
