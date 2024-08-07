@@ -80,15 +80,8 @@ footer a:hover {
     margin-bottom: 1rem;
     text-shadow: 1px 3px 3px rgba(80, 96, 100, 0.209);
 }
-/* description page styling */
-.resourceLinks a{
+.links a{
     color: #FFF7F7;
-}
-.links{
-    color:#ee8a8a;    
-}
-.links:hover{
-    color:#ffd972;
 }
 
 
@@ -221,7 +214,7 @@ footer a:hover {
 
 .job{
     background-color: #77cece;
-    padding:1%;
+    padding:2%;
     width:50%;
     border-radius: 15px;
     font-size: 15px;
@@ -262,17 +255,16 @@ footer a:hover {
     height: 70vh;
     background-color: #FBC1BD;
     border-radius: 30px;
-    align-items: center;
+    /* align-items: center; */
     position:fixed;
     top:20vh;
     left:30vh;
-    display:none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    display:none; 
     visibility:hidden;
-}
-
-.team-popup .left {
     padding-top: 40px;
-
 }
 
 .team-popup .name {
@@ -281,7 +273,7 @@ footer a:hover {
     color: white;
     text-align: center;
     font-size: 25px;
-    width: 25%;
+    width: 70%;
     margin-top: 2%;
     margin-left: 5%;
     border-radius: 10px;
@@ -292,32 +284,53 @@ footer a:hover {
     background-color: #ffffff92;
     color: #EE8A8B;
     font-size: 20px;
-    width: 20%;
+    width: 55%;
+
     border: 2px solid white;
   
 }
 
 .team-popup .description {
-    width: 40%;
+    width: 80%;
     text-align: left;
     float:left;
-    height: 300px;
+    height: 325px;
     background-color: #ffffff82;
     color: #EE8A8B;
     border: 2px solid white;
     font-size: 20px;
     border-radius: 10px;
     margin-left:5%;
+    overflow-y:scroll;
    
 }
 
 .team-popup .description p {
     padding: 10px;
+    font-size: 17px;
 }
-.team-popup .personImg{
-    background-color: white;
+
+.team-popup .left {
+    width: 60%;
+    float: left;
+}
+
+.team-popup .right{
     width: 40%;
-    float: right;
-    margin-right: 50px;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
 
 }
+.team-popup .memberPicture {
+    align-items: center;
+}
+
+.team-popup .memberPicture img{
+    right: 30px;
+    justify-content: center;
+    width: 80%;
+    border: 2px solid rgb(255, 255, 255); 
+    border-radius: 10%;
+}
+
