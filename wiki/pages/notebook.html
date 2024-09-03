@@ -114,7 +114,7 @@
       position: absolute;
       top: 0;
       left: -12px;
-      height: 270px;
+      height: 560px;
       display: flex;
       align-items: center;
       justify-content: space-evenly;
@@ -159,6 +159,11 @@
       <div class="pages">
 
           <div class="beads">
+            <div class="bead"></div>
+            <div class="bead"></div>
+            <div class="bead"></div>
+            <div class="bead"></div>
+            <br><br>
             <div class="bead"></div>
             <div class="bead"></div>
             <div class="bead"></div>
@@ -273,6 +278,7 @@
           </div>
         </div>
         <div class="page"></div>
+        <!-- <div class="end"></div> -->
       </div>
     </div>
     <div class="controls">
@@ -293,25 +299,32 @@
 
     function previous(){
       let active = document.querySelector(".active")
-      let prevSib = active.previousElementSibling
-      active.className="page"
-      prevSib.className = "page active"
-      setIndex()
-      prevSib.style.transform = "rotateY(0deg)";
-      let prevSib2 = prevSib.previousElementSibling
-      if(prevSib2 && prevSib2.className =="page"){
-        prevSib2.style.zIndex = "9998"
+      if (active.previousElementSibling.classList.contains("page")) {
+        let prevSib = active.previousElementSibling;
+        active.className="page";
+        prevSib.className = "page active";
+        setIndex();
+        prevSib.style.transform = "rotateY(0deg)";
+        let prevSib2 = prevSib.previousElementSibling
+        if (prevSib2 && prevSib2.className =="page"){
+          prevSib2.style.zIndex = "9998"
+        }
       }
+      
     }
 
     function next(){
       let active = document.querySelector(".active")
-      let nextSib = active.nextElementSibling
-      active.style.transform = "rotateY(180deg)"
+      let nextSib = active.nextElementSibling;
+      if (nextSib == null) {
+        nextSib = active;
+      }
+      console.log(nextSib);
+      active.style.transform = "rotateY(180deg)";
       active.className="page";
-      setIndex()
+      setIndex();
       active.style.zIndex = "9998";
-      if(nextSib){
+      if (nextSib){
         nextSib.className = "page active";
       }
     }
