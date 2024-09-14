@@ -64,7 +64,7 @@ function previous(){
         prevSib.className = "page active";
         setIndex();
         prevSib.style.transform = "rotateY(180deg)";
-        prevSib.style.zIndex = "9998";
+        prevSib.style.zIndex = "9997";
     }
 }
 
@@ -77,7 +77,7 @@ function next(){
     active.style.transform = "rotateY(180deg)";
     active.className="page";
     setIndex();
-    active.style.zIndex = "9998";
+    active.style.zIndex = "9997";
     if (nextSib){
         nextSib.className = "page active";
     }
