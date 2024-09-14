@@ -60,7 +60,6 @@ function previous(){
     active.style.transform = "rotateY(0deg)";
     if (active.previousElementSibling.classList.contains("page")) {
         let prevSib = active.previousElementSibling;
-        console.log(prevSib)
         active.className="page";
         prevSib.className = "page active";
         setIndex();
@@ -83,3 +82,59 @@ function next(){
         nextSib.className = "page active";
     }
 }
+
+// adds bookmarks to notebook page at each header (new day) instead of having to do it manually !!
+function add_bookmarks() {
+    let page_headers = document.querySelectorAll('div.page-header');
+    page_headers.forEach(function(header) {
+        header.insertAdjacentHTML('beforebegin', 
+            '<div class="bookmark"> <img src="../../static/bookmark.png"></div>'
+        )
+    })
+}
+
+add_bookmarks();
+
+// notebook page flip
+const nbWrapper = document.querySelector('.nb-wrapper');
+
+// if (nbWrapper) {
+//     const tocLinks = nbWrapper.querySelectorAll('.toc-list-item a');
+    
+//     tocLinks.forEach(function(link) {
+//         link.addEventListener('click', function(event) {
+//             event.preventDefault();
+//             console.log(link);
+//             const targetId = link.getAttribute('href').substring(1);
+//             const targetEl = nbWrapper.querySelector(`#${targetId}`);
+
+//             if (!targetEl) return;
+
+//             const targetPage = targetEl.closest('.page');
+//             if (!targetPage) return;
+
+//             let active = nbWrapper.querySelector(".active");
+
+//             console.log(targetPage);
+
+//             console.log(targetPage.compareDocumentPosition(active));
+
+//             while (active !== targetPage) {
+//                 next(); 
+//                 active = nbWrapper.querySelector(".active");
+//             }
+
+//             // if (targetPage.compareDocumentPosition(active) & Node.DOCUMENT_POSITION_FOLLOWING) {
+//             //     while (active !== targetPage) {
+//             //         next(); 
+//             //         active = nbWrapper.querySelector(".active");
+//             //     }
+//             // } else if (targetPage.compareDocumentPosition(active) & Node.DOCUMENT_POSITION_PRECEDING) {
+//             //     while (active !== targetPage) {
+//             //         previous();
+//             //         active = nbWrapper.querySelector(".active");
+//             //     }
+//             // }
+//         });
+//     });
+// }
