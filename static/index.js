@@ -211,12 +211,10 @@ function popupPopulate(member, event) {
 
     // change picture here, code TBD depending on links. hopefully this will alleviate some of the problems of this page loading rlly slowly due to images
     let img = document.getElementById('popup_pic');
-
     // show the popup
     event.stopPropagation();
     popup.style.display = "block";
     popup.style.visibility = "visible";
-
     document.addEventListener('click', function() {
         handleClickOutside(event);
     });
