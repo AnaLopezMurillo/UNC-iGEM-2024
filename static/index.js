@@ -152,6 +152,35 @@ const personBio = {
     "Uditi Patil" : "Biomedical Engineering B.S. <br> Uditi is a first year undergraduate studying Biomedical Engineering at the University of North Carolina at Chapel hill. She was born in India and later moved to North Carolina. She is interested in medecine and reaserch and hopes to expand her knowledge on both through iGEM. ",
     "Zaid Syed" : "Biology B.S. <br> Zayd is a third year undergraduate transfer student studying biology at the University of North Carolina at Chapel Hill. Zayd is originally from Illinois. Zayd has interests in biological research and medicine. These interests overlapped with the research component of iGEM which led Zayd to joining this year's incredibly talented UNC iGEM team.",
 }
+const personPicture = {
+    "Gavin Wiltshire" : "",
+    "Corinne Drabenstott" : "",
+    "Annika Bridge" : "https://static.igem.wiki/teams/5192/annika-medium.jpg",
+    "Pristine Onuoha" : "",
+    "Dominic Kubissa" : "",
+    "Logan Amos": "",
+    "Sriya Darsi" : "",
+    "Anusha Gupta" : "https://static.igem.wiki/teams/5192/anusha.jpeg",
+    "Daniellejen Nares" : "",
+    "Isabel Lopez Murillo" : "",
+    "Ishita Siddamreddy" : "",
+    "Layla Gusa" : "",
+    "Joshua Lopez" : "",
+    "Lahari  Pokala" : "",
+    "Grant Holland" : "https://static.igem.wiki/teams/5192/grant-small.jpeg",
+    "Nishant Dengi" : "",
+    "Uditi Patil" : "",
+    "Zaid Syed" : "",
+    "Heng Annika Shi" : "",
+    "Jack Titus" : "https://static.igem.wiki/teams/5192/jack.jpeg",
+    "Aryan Kokkanti": "",
+    "Elizabeth Krist" : "",
+    "Osvaldo Linares": "https://static.igem.wiki/teams/5192/osvaldo.jpeg",
+    "Julia Zhu" : "",
+    "Keshav Saxena" : "",
+    "Moiz Chomelawala": "https://static.igem.wiki/teams/5192/moiz.jpg",
+    "Samantha Carew" : "",
+}
 
 const popup = document.getElementById("popup");
 
@@ -183,6 +212,12 @@ for (let member of Object.keys(teamPrimary)) {
     job.classList.add("job");
     job.innerHTML = teamPrimary[member];
 
+    //append image
+    team_img.classList.add("team_img");
+    team_img.style.backgroundImage = `url(${personPicture[member]})`;
+
+
+
     // append divs to each other
     div.appendChild(team_img);
     div.appendChild(name);
@@ -211,6 +246,9 @@ function popupPopulate(member, event) {
 
     // change picture here, code TBD depending on links. hopefully this will alleviate some of the problems of this page loading rlly slowly due to images
     let img = document.getElementById('popup_pic');
+    img.style.backgroundImage = `url(${personPicture[member]})`;
+    // img.innerHTML = personPicture[member];
+
     // show the popup
     event.stopPropagation();
     popup.style.display = "block";
