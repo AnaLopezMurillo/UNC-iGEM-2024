@@ -334,3 +334,61 @@ footer a:hover {
     border-radius: 10%;
 }
 
+.ff-logo {
+    max-width: 45vw;
+    margin: auto;
+    display:block;
+    margin-top: 5vh;
+    position: relative;
+    z-index:3;
+}
+
+
+canvas{ 
+    display: block; 
+}
+
+#particles-js{ 
+    z-index:2;
+    top:0;
+    left:0;
+    position:absolute; 
+    width: 100%; 
+    height: 100%; 
+    background-color: #D9F0EF; 
+    background-size: cover;
+    background-position: 50% 50%; 
+} 
+
+.section {
+    height: 100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: white;
+    background-color: #333;
+    position: relative;
+}
+
+.section:nth-child(even) {
+    background-color: #555;
+}
+
+.fixed-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color:#FFD972;
+    background-size: cover;
+    z-index: 0;
+}
+
+/* Foreground content that scrolls over the fixed element */
+.content {
+    position: relative;
+    z-index: 1;
+}
