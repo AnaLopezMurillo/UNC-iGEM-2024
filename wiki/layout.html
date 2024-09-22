@@ -43,7 +43,7 @@
   </header> -->
 
   <!-- Page Content -->
-  <div class="container">
+  <div class="container {% if page_name == 'home' %}no-margin{% endif %}">
     {% block page_content %}{% endblock %}
   </div>
 

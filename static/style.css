@@ -2,7 +2,6 @@ body {
     padding-top: 56px; 
     background-color: #D9F0EF;
     font-family: 'Lato', sans-serif;
-    /* font-weight: 100; */
 }
 
 .left-aligned { 
@@ -348,6 +347,11 @@ canvas{
     display: block; 
 }
 
+.home-container {
+    margin:0;
+    padding:0;
+}
+
 #particles-js{ 
     z-index:2;
     top:0;
@@ -362,19 +366,24 @@ canvas{
 
 .section {
     height: 100vh;
-    width:100%;
+    width: 100vw;
+    padding: 0;
+    margin:0;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 3rem;
     color: white;
-    background-color: #333;
+    background-color: #D9F0EF;
     position: relative;
+    z-index:2;
 }
 
-.section:nth-child(even) {
-    background-color: #555;
+.section.s2 {
+    background-color: #33333300;
+    height: 100vw;
 }
+
 
 .fixed-content {
     position: fixed;
@@ -384,11 +393,15 @@ canvas{
     height: 100vh;
     background-color:#FFD972;
     background-size: cover;
-    z-index: 0;
+    z-index: -1;
 }
 
-/* Foreground content that scrolls over the fixed element */
 .content {
     position: relative;
     z-index: 1;
+}
+
+.no-margin{
+    margin: 0; /* Remove margin */
+    padding: 0;
 }
