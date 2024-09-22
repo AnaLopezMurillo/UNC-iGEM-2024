@@ -40,6 +40,8 @@ body {
     border-left-color:#d9534f 
 }
 
+
+
 /* footer */
 footer a { 
     color: white; font-weight: bold; text-decoration: none; 
@@ -379,11 +381,17 @@ canvas{
     z-index:2;
 }
 
-.section.s2 {
-    background-color: #33333300;
-    height: 100vw;
+.section.s1 {
+    height: 200vh;
 }
 
+.section.s2 {
+    background-color: #85575400;
+}
+
+.section.s3 {
+    height:100vh;
+}
 
 .fixed-content {
     position: fixed;
