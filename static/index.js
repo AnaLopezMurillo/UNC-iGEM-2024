@@ -238,7 +238,7 @@ function handleClickOutside(event) {
 particlesJS('particles-js', {
     "particles": {
       "number": {
-        "value": 30, 
+        "value": 40, 
         "density": {
           "enable": true,
           "value_area": 800
@@ -256,7 +256,7 @@ particlesJS('particles-js', {
       },
       "opacity": {
         "value": 0.6,  
-        "random": false
+        "random": true
       },
       "size": {
         "value": 30,

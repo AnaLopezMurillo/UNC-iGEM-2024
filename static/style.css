@@ -344,6 +344,13 @@ footer a:hover {
     z-index:3;
 }
 
+#logo-container {
+    width: 100vw;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
 
 canvas{ 
     display: block; 
@@ -373,16 +380,45 @@ canvas{
     margin:0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    color: white;
     background-color: #D9F0EF;
     position: relative;
     z-index:2;
 }
 
+
+.section.s1 .content {
+    justify-content: center;
+    align-items: center;
+    padding: 3vw 7vw 7vw;
+}
+
+#nc-graphic {
+    margin-top: 0vh;
+    margin-left: 15vw;
+    width: 70%;
+}
+
+.home-callout {
+    color: #C2393B;
+}
+
+.home-text {
+    margin-top: 5vh;
+    width: 80vw;
+    margin-bottom: 3vh;
+    color: #0C3659;
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+}
+
+.home-text a {
+    font-style: normal;
+    text-decoration: none;
+}
+
 .section.s1 {
-    height: 200vh;
+    height: 80vh;
 }
 
 .section.s2 {
@@ -397,19 +433,45 @@ canvas{
     position: fixed;
     top: 0;
     left: 0;
+    margin:0;
     width: 100%;
     height: 100vh;
+    justify-content: center;
     background-color:#FFD972;
     background-size: cover;
     z-index: -1;
 }
 
+.fixed-text {
+    height: 100%; 
+    color: white;
+    display: flex; 
+    flex-direction:column;
+    position:relative;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.pfas-imgs {
+    position: fixed;
+}
+
+.pfas-blue {
+    position: fixed;
+    top:0;
+    right:0;
+}
+
+.yellow-fixed-txt {
+    position:fixed;
+}
+
 .content {
-    position: relative;
+    position:absolute;
     z-index: 1;
 }
 
 .no-margin{
-    margin: 0; /* Remove margin */
+    margin: 0; 
     padding: 0;
 }
