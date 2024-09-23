@@ -458,8 +458,10 @@ canvas{
 
 .pfas-blue {
     position: fixed;
-    top:0;
-    right:0;
+    bottom:-10vw;
+    left:-14vh;
+    width: 350px;
+    transform: rotate(-30deg);
 }
 
 .yellow-fixed-txt {
