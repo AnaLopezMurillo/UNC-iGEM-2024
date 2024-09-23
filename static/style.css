@@ -426,7 +426,15 @@ canvas{
 }
 
 .section.s3 {
-    height:100vh;
+    height:78vh;
+}
+
+.section.s4 {
+    height: 82vh;
+}
+
+.section.s5 {
+    height: 30vh;
 }
 
 .fixed-content {
@@ -468,12 +476,75 @@ canvas{
     position:fixed;
 }
 
+.s3 .content {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+}
+
+.s4 .content {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+}
+
+.s4 .content.home-text {
+    justify-content: center;
+}
+
+.s3 .content .home-text {
+    justify-content: center;
+}
+
 .content {
     position:absolute;
     z-index: 1;
 }
 
+.wizard {
+    width: 450px;
+}
+
 .no-margin{
     margin: 0; 
     padding: 0;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.custom-button {
+    margin-top: 60px;
+    position: relative;
+    display: inline-block;
+    padding: 20px 30px;
+    width: 300px;
+    background-color: #FFD972;
+    color: #4F2222;
+    font-size: 25px;
+    border: 1.5px solid white;
+    border-radius: 25px;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+.s5 .home-text {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.custom-button:hover {
+    background-color: #ffe291;
+}
+.custom-button:active {
+    box-shadow: inset 0px 5px 15px rgba(96, 84, 84, 0.3);
 }

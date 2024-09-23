@@ -29,6 +29,9 @@ def serve():
 def home():
     return render_template('pages/home.html', page_name='home')
 
+@app.route('/description/')
+def description_page():
+    return render_template('pages/description.html')
 
 @app.route('/<page>/')
 def pages(page):
