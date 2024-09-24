@@ -189,10 +189,11 @@ footer a:hover {
 /* Team page css */
 .big_group_picture{
     padding:20%;
-    background-image: url("https://static.igem.wiki/teams/5192/team.png");
+    background-image: url("https://static.igem.wiki/teams/5192/fullteam.png");
     border: 5px solid rgb(255, 255, 255); 
     border-radius: 60px;
-    width:60%;
+    /* width:60%; */
+    max-width: 70vw;
     margin: auto;
     /* background-size:cover; */
     background-position: center;
