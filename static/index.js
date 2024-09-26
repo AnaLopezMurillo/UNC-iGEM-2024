@@ -155,7 +155,7 @@ const personBio = {
 const personPicture = {
     "Gavin Wiltshire" : "https://static.igem.wiki/teams/5192/team-members/gavin.jpeg",
     "Corinne Drabenstott" : "https://static.igem.wiki/teams/5192/team-members/corinne.jpeg",
-    "Annika Bridge" : "https://static.igem.wiki/teams/5192/team-members/annikabs.jpeg",
+    "Annika Bridge" : "https://static.igem.wiki/teams/5192/team-members/annikab.jpeg",
     "Pristine Onuoha" : "https://static.igem.wiki/teams/5192/team-members/pristine.jpeg",
     "Dominic Kubissa" : "",
     "Logan Amos": "",
