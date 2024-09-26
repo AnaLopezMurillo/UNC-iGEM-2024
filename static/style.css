@@ -188,8 +188,19 @@ footer a:hover {
 
 /* Team page css */
 .big_group_picture{
-    background-color: white;
-    padding:20%;
+    /* padding:20%; */
+    border: 5px solid rgb(255, 255, 255); 
+    border-radius: 60px;
+    /* width:60%; */
+    /* max-width: 70vw; */
+    margin-left: 15%;
+    width:70%;
+    margin-right: 15%;
+
+    align-content: center;
+    /* background-size:cover; */
+    /* background-position: center;
+    background-repeat: no-repeat; */
 }
 
 .team_image{
@@ -197,6 +208,14 @@ footer a:hover {
     padding: 30%;
     margin: 2% 0% 0% 0%;
     border-radius: 50%;
+
+    background-image:url("");
+    /* width: 80%; */
+    border: 2px solid lightblue; 
+    /* border-radius: 10%; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .name{
@@ -317,20 +336,30 @@ footer a:hover {
 
 .team-popup .right{
     width: 40%;
-    height: 70%;
+    height: 90%;
     display: flex;
+  
     justify-content: space-around;
+
 
 }
 .team-popup .memberPicture {
-    align-items: center;
+    /* align-items: center; */
+    background-image:url("");
+    width: 80%;
+    border: 2px solid rgb(255, 255, 255); 
+    border-radius: 10%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
-.team-popup .memberPicture img{
+/* .team-popup .memberPicture img{
     right: 30px;
     justify-content: center;
     width: 80%;
     border: 2px solid rgb(255, 255, 255); 
     border-radius: 10%;
-}
+} */
 
