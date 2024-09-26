@@ -248,7 +248,6 @@ function popupPopulate(member, event) {
     let img = document.getElementById('popup_pic');
     img.style.backgroundImage = `url(${personPicture[member]})`;
     // img.innerHTML = personPicture[member];
-
     // show the popup
     event.stopPropagation();
     popup.style.display = "block";
