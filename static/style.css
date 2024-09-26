@@ -363,3 +363,241 @@ footer a:hover {
     border-radius: 10%;
 } */
 
+
+.navbar {
+    z-index: 9999;
+}
+
+.book {
+    margin: 15px auto 40px auto;
+    width: fit-content;
+    height: 300px;
+    position: relative;
+    transition: width 0.5s ease;
+  }
+
+.pages {
+    height: 100%;
+    position: relative;
+}
+
+.page {
+    width: 530px;
+    height: 640px; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 7mm;
+    margin: 0 6px;
+    transform-style: preserve-3d;
+    transform-origin: left;
+    transition: 0.27s;
+    box-shadow: 1px 2px 0 0 rgba(0,0,0,0.15), 1px 3px 1px 0 rgba(0,0,0,0.1);
+}
+
+.page-side {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 45px 30px;
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 7mm;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+
+  .page-header {
+    text-align: center;
+    padding-left: 25%;
+  }
+
+  .page-title {
+    width: 100%;
+    align-items: center;
+    margin: 0;
+    width: fit-content;
+    padding: 0 15px 0px 15px;
+    border-radius: 4px;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 1px;
+    background-color: #C5E7E7;
+  }
+
+  .page-subtitle {
+    margin-top: 8px;
+    font-size: 15px;
+    /* font-weight: 400; */
+  }
+
+  .page-content {
+    flex-grow: 1;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+  }
+
+  .page-footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+
+  .pg-no {
+    padding: 0 5px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background: white;
+    border-radius: 3mm;
+  }
+
+  .front {
+    background: #E9F6F5;
+    color: #4BA7A7;
+    padding-left: 40px;
+  }
+
+  .back {
+    background: #E9F6F5;
+    color: #4BA7A7;
+    padding-right: 40px;
+    transform: rotateY(180deg);
+  }
+
+  .beads {
+    position: absolute;
+    top: 0;
+    left: -12px;
+    height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    z-index: 9998;
+  }
+
+  .bead {
+    width: 36px;
+    height: 12px;
+    background: #FFD972;
+    box-shadow: 
+        1px 2px 0 0 rgba(0,0,0,0.15), 
+        1px 3px 1px 0 rgba(0,0,0,0.1);
+    border-radius: 5mm;
+    z-index: 9998;
+  }
+
+  .controls {
+    width: 350px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 360px auto 0px auto;
+    /* margin-left: 37%; */
+    padding-bottom: 10px;
+  }
+
+  .controls button {
+    background: #C5E7E7;
+    color: #4BA7A7;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    font-size: large;
+    border: 0.4mm solid #4BA7A7;
+    border-radius: 70%;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .controls button :hover {
+    color: #286969;
+  }
+
+ .page-side#highlight {
+    background-color: #EE8A8B;
+ } 
+
+ /* Accomplishments for the day */
+ .nb-acc {
+    padding-right: 20px;
+    width: fit-content;
+    color: #EE8A8B;
+    float: left;
+ }
+ 
+ .nb-main {
+    margin-top: 5px;
+ }
+
+ .page-content .highlight {
+    font-weight: 800;
+    font-size: 16px;
+    margin-bottom: 5px;
+ }
+
+ .nb-acc ul {
+    font-size: 15px;
+    width: fit-content;
+    background-color: #F5FAFF;
+    margin-bottom: 0;
+    padding-left: 20px;
+    margin-left: 20px;
+    padding-right: 20px;
+}
+
+.nb-main .text {
+    width: 95%;
+    font-size: 13px;
+    background-color: #F5FAFF;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 2px;
+    padding-left: 5px;
+
+}
+
+.nb-wrapper {
+    background-color:#FFD972;
+    width: auto;
+    height: fit-content;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding-top: 1px;
+    border-radius: 36px;
+}
+
+.nb-toc {
+    margin: 20px;
+    float: left;
+    width: 15%;
+}
+
+.nb-toc .toc-list{
+    color: #C5E7E7;
+}
+
+.bookmark {
+    position:absolute;
+    top:0;
+    margin-left: 20px;
+    padding: 0;
+}

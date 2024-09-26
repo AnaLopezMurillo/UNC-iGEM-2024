@@ -1,34 +1,184 @@
+
 {% extends "layout.html" %}
-  
+
 {% block title %}Notebook{% endblock %}
-{% block lead %}Document the dates you worked on your project. This should be a detailed account of the work done each day for your project.{% endblock %}
+{% block lead %}Describe the research, experiments, and protocols you used in your iGEM project.{% endblock %}
 
 {% block page_content %}
 
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>What should this page contain?</h2>
-    <hr>
-    <ul>
-      <li>Chronological notes of what your team is doing.</li>
-      <li>Brief descriptions of daily important events.</li>
-      <li>Pictures of your progress.</li>
-      <li>Mention who participated in what task.</li>
-    </ul>
-  </div>
-  <div class="col-lg-4">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul> 
-      <li><a href="http://2018.igem.org/Team:Munich/Notebook">2018 Munich</a></li>
-      <li><a href="https://2019.igem.org/Team:Georgia_State/Notebook">2019 Georgia State</a></li>
-      <li><a href="https://2019.igem.org/Team:Newcastle/Notebook">2019 Newcastle</a></li>
-      <li><a href="https://2020.igem.org/Team:IISER-Pune-India/Notebook">2020 IISER Pune India</a></li>
-      <li><a href="https://2020.igem.org/Team:Lund/Notebook">2020 Lund</a></li>
-      <li><a href="https://2020.igem.org/Team:NOVA_LxPortugal/Notebook">2020 NOVA LxPortugal</a></li>
-      <li><a href="https://2020.igem.org/Team:RDFZ-China/NoteBook">2020 RDFZ China</a></li>
-    </ul>
-  </div>
+<!--Header -->
+<div class="row justify-content-center mb-4 mt-2">
+  <h1 class="text-center header-text">NOTEBOOK</h1>
 </div>
 
-{% endblock %}
+<div class="nb-wrapper">
+
+  <div class="book">
+    <div class="pages">
+
+        <div class="beads">
+          <div class="bead"></div>
+          <div class="bead"></div>
+          <div class="bead"></div>
+        </div>
+
+      <div class="page active" style="transform: rotateY(180deg)">
+        <div class="page-side front" id="highlight">
+          <!-- <div class="page-header">
+            <div class="page-title">
+              Notebook
+            </div>
+          </div>
+          <div class="page-footer">
+            <span>May 2023</span>
+            <span class="pg-no">1</span>
+          </div> -->
+        </div>
+
+        
+        <div class="page-side back">
+          <div class="page-header">
+            <div class="page-title" id="Jan16">
+              January 16
+              <span></span>
+            </div>
+            <div class="page-subtitle">Tuesday</div>
+          </div>
+          <div class="page-content">
+            <div class="nb-acc">
+              <div class="highlight"> 
+                Central accomplishments(s)
+              </div>
+              <ul>
+                <li>Completed experiment x in wet lab</li>
+                <li>Made ML model in dry lab</li>
+                <li>Volunteered here</li>
+                <li>Another nice development</li>
+              </ul>
+            </div>
+            <div class="nb-main">
+              <div class="highlight">Wet Lab</div>
+              <div class="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt, justo in vehicula condimentum, turpis est bibendum libero, non maximus erat odio dapibus diam. Praesent ac viverra mauris. Donec leo tellus, venenatis sit amet elementum ac, auctor at quam. Etiam ut nunc sit amet sapien semper tempor. Vestibulum non placerat eros.
+              </div>
+              <div class="highlight">Dry Lab</div>
+              <div class="text">
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus et ante id risus aliquet vulputate ut vitae massa. Cras ultricies augue eu neque maximus pellentesque. Donec nec nibh posuere, finibus turpis ac, efficitur leo. Nullam ipsum sapien, posuere vitae justo nec, sodales auctor nisi. Vestibulum gravida risus et lorem eleifend semper. Morbi faucibus, tellus quis ultricies vehicula. Vivamus et ante id risus aliquet vulputate ut vitae massa. Cras ultricies augue eu neque maximus pellentesque. Donec nec nibh posuere, finibus turpis ac, efficitur leo.                </div>
+            </div>
+          </div>
+          <div class="page-footer">
+            <span>May 2023</span>
+            <span class="pg-no">2</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="page">
+        <div class="page-side front">
+          <div class="page-content">
+            <div class="nb-main">
+              <div class="highlight">Human Practices</div>
+              <div class="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt, justo in vehicula condimentum, turpis est bibendum libero, non maximus erat odio dapibus diam. Praesent ac viverra mauris. Donec leo tellus, venenatis sit amet elementum ac, auctor at quam. Etiam ut nunc sit amet sapien semper tempor. Vestibulum non placerat eros.
+              </div>
+              <div class="highlight">Fundraising</div>
+              <div class="text">
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus et ante id risus aliquet vulputate ut vitae massa. Cras ultricies augue eu neque maximus pellentesque. Donec nec nibh posuere, finibus turpis ac, efficitur leo. Nullam ipsum sapien, posuere vitae justo nec, sodales auctor nisi. Vestibulum gravida risus et lorem eleifend semper. Morbi faucibus, tellus quis ultricies vehicula. Vivamus et ante id risus aliquet vulputate ut vitae massa. Cras ultricies augue eu neque maximus pellentesque. Donec nec nibh posuere, finibus turpis ac, efficitur leo.                </div>
+            </div>
+          </div>
+          <div class="page-footer">
+            <span>May 2023</span>
+            <span class="pg-no">3</span>
+          </div>
+        </div>
+
+        <div class="page-side back">
+          <div class="page-header">
+            <div class="page-title">
+              Books
+              <span></span>
+            </div>
+            <div class="page-subtitle">Client Name</div>
+          </div>
+          <div class="page-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nesciunt excepturi voluptas ullam totam, earum beatae aperiam, dolorum doloribus obcaecati eos expedita aut voluptatibus architecto.
+          </div>
+          <div class="page-footer">
+            <span>May 2023</span>
+            <span class="pg-no">4</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="page">
+        <div class="page-side front" id="Jan17">
+          <div class="page-header">
+            <div class="page-title">
+              Plays
+              <span></span>
+            </div>
+            <div class="page-subtitle">Client Name</div>
+          </div>
+          <div class="page-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nesciunt excepturi voluptas ullam totam, earum beatae aperiam, dolorum doloribus obcaecati eos expedita aut voluptatibus architecto.
+          </div>
+          <div class="page-footer">
+            <span>May 2023</span>
+            <span class="pg-no">5</span>
+          </div>
+        </div>
+
+        <div class="page-side back">
+          <div class="page-header">
+            <div class="page-title">
+              Jousting
+              <span></span>
+            </div>
+            <div class="page-subtitle">Client Name</div>
+          </div>
+          <div class="page-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nesciunt excepturi voluptas ullam totam, earum beatae aperiam, dolorum doloribus obcaecati eos expedita aut voluptatibus architecto.
+          </div>
+          <div class="page-footer">
+            <span>May 2023</span>
+            <span class="pg-no">6</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="page">
+        <div class="page-side front">
+          <div class="page-header">
+            <div class="page-title">
+              <span></span>
+            </div>
+            <div class="page-subtitle"></div>
+          </div>
+          <div class="page-content">
+          </div>
+        </div>
+
+        <div class="page-side back" id="highlight">
+          <div class="page-header">
+            <div class="page-title">
+              
+              <span></span>
+            </div>
+            <div class="page-subtitle"></div>
+          </div>
+          <div class="page-content">
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="page end"></div> -->
+    </div>
+  </div>
+  <div class="controls">
+    <button type="button" class="btn" onclick="previous()"> <span>←</span></button>
+    <button type="button" class="btn" onclick="next()"> <span>→</span></button>
+  </div>
+
+</div>
+    {% endblock %}
+
