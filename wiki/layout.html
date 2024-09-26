@@ -3,6 +3,7 @@
 
 <head>
   <!-- Required meta tags -->
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="https://static.igem.wiki/common/icons/favicons/igem-2022.svg" />
@@ -17,6 +18,7 @@
 
   <!--Custom Javascript-->
   <script src="{{ url_for('static', filename = 'index.js') }}" defer></script>
+  <script src="{{ url_for('static', filename = 'particles.js-master/particles.js') }}"></script>
 
   <title>
     {% block title %} {% endblock %} | Example - iGEM 2023
@@ -41,7 +43,7 @@
   </header> -->
 
   <!-- Page Content -->
-  <div class="container">
+  <div class="container {% if page_name == 'home' %}no-margin{% endif %}">
     {% block page_content %}{% endblock %}
   </div>
 

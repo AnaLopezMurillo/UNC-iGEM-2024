@@ -230,7 +230,9 @@ for (let member of Object.keys(teamPrimary)) {
 
     // grab members div from team.html + append
     let members = document.getElementsByClassName("members")[0];
-    members.appendChild(div);
+    if (members) {
+        members.appendChild(div);
+    }
 }
 
 function popupPopulate(member, event) {
@@ -318,3 +320,62 @@ add_bookmarks();
 
 // notebook page flip
 const nbWrapper = document.querySelector('.nb-wrapper');
+
+// Home page styling
+
+particlesJS('particles-js', {
+    "particles": {
+      "number": {
+        "value": 50, 
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": "#77cece"
+      },
+      "shape": {
+        "type": "circle", 
+        "stroke": {
+          "width": 2,
+          "color": "#8edff0d090"
+        }
+      },
+      "opacity": {
+        "value": 0.6,  
+        "random": true
+      },
+      "size": {
+        "value": 30,
+        "random": true,
+        "anim": {
+          "enable": false  
+        }
+      },
+      "move": {
+        "enable": true,
+        "speed": 2, 
+        "direction": "none",
+        "random": true,  
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,  
+          "mode":"repulse"
+        },
+        "onclick": {
+          "enable": false  
+        },
+        "resize": false
+      }
+    },
+    "retina_detect": true
+  });
+  
