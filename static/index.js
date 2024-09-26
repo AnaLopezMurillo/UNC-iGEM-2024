@@ -311,7 +311,7 @@ function add_bookmarks() {
     let page_headers = document.querySelectorAll('div.page-header');
     page_headers.forEach(function(header) {
         header.insertAdjacentHTML('beforebegin', 
-            '<div class="bookmark"> <img src="../../static/bookmark.png"></div>'
+            '<div class="bookmark"> <img src="https://static.igem.wiki/teams/5192/bookmark.png"></div>'
         )
     })
 }
