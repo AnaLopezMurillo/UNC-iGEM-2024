@@ -814,3 +814,8 @@ canvas{
 .custom-button:active {
     box-shadow: inset 0px 5px 15px rgba(96, 84, 84, 0.3);
 }
+
+#medal {
+    max-width: 35%;
+    margin-left: 25vw;
+}
